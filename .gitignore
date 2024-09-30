@@ -1,1 +1,5 @@
 token.debug.tmp
+*.json
+*.bkp
+__pycache__
+t.py
