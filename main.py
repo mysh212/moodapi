@@ -16,4 +16,6 @@ lib.io.save(f)
 #             # debug(j.keys())
 #     input()
 
-lib.diff.main(lib.io.translate(json.loads(read_from_file('last.json.bkp'))), lib.io.translate(lib.io.get()))
+ans = lib.diff.main(lib.io.translate(json.loads(read_from_file('last.json.bkp'))), lib.io.translate(lib.io.get()))
+for i in ans:
+    warning(i)

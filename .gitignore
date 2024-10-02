@@ -3,3 +3,4 @@ token.debug.tmp
 *.bkp
 __pycache__
 t.py
+*.html

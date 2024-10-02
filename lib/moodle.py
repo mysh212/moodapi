@@ -7,7 +7,7 @@ token = read_from_file('token.debug.tmp').strip()
 
 def get_courses(token: str) -> list:
     html = requests.get(url, cookies = {'MoodleSession': token})
-    # write_to_file('homepage.html', html.text)
+    write_to_file('homepage.html', html.text)
 
     soup = bs(html.text, 'html.parser')
     menu = soup.find('div', class_ = 'card-text content mt-3')
